@@ -163,7 +163,7 @@
     position: relative;
     margin-top: 2.5em; /* should be at least equal to the top offset of background casing */
     /* because back casing is positioned higher than actual bar */
-    width: 12.5em; /* required, we have to define the width of a bar */
+    width: 10.5em; /* required, we have to define the width of a bar */
 }
 /* right bottom patch - make sure inner bar's right bottom corner is "cut" when it slides down */
 .bar-container:before {
@@ -334,7 +334,7 @@ input[name^="fill-"] + label {
 	width: 65px;
 	padding: 0px 6px;
 	color: #777;
-	line-height: 20px;	
+	line-height: 20px;
 	font-size: 13px;
 	text-shadow: 1px 1px 1px #fff;
 	border: 1px solid #fff;
@@ -363,27 +363,15 @@ input#f-none:checked ~ .graph-container > li:nth-child(3) .bar-inner { height: 0
 input#f-none:checked ~ .graph-container > li:nth-child(4) .bar-inner { height: 0; bottom: -2.5em; }
 input#f-none:checked ~ .graph-container > li:nth-child(5) .bar-inner { height: 0; bottom: -2.5em; }
 input#f-none:checked ~ .graph-container > li:nth-child(6) .bar-inner { height: 0; bottom: -2.5em; }
+input#f-none:checked ~ .graph-container > li:nth-child(7) .bar-inner { height: 0; bottom: -2.5em; }
 /* Product 1 */
 input#f-product1:checked ~ .graph-container > li:nth-child(1) .bar-inner { height: 90%; bottom: 0; }
-input#f-product1:checked ~ .graph-container > li:nth-child(2) .bar-inner { height: 80%; bottom: 0; }
+input#f-product1:checked ~ .graph-container > li:nth-child(2) .bar-inner { height: 60%; bottom: 0; }
 input#f-product1:checked ~ .graph-container > li:nth-child(3) .bar-inner { height: 50%; bottom: 0; }
-input#f-product1:checked ~ .graph-container > li:nth-child(4) .bar-inner { height: 30%; bottom: 0; }
-input#f-product1:checked ~ .graph-container > li:nth-child(5) .bar-inner { height: 80%; bottom: 0; }
-input#f-product1:checked ~ .graph-container > li:nth-child(6) .bar-inner { height: 35%; bottom: 0; }
-/* Product 2 */
-input#f-product2:checked ~ .graph-container > li:nth-child(1) .bar-inner { height: 50%; bottom: 0; }
-input#f-product2:checked ~ .graph-container > li:nth-child(2) .bar-inner { height: 100%; bottom: 0; }
-input#f-product2:checked ~ .graph-container > li:nth-child(3) .bar-inner { height: 25%; bottom: 0; }
-input#f-product2:checked ~ .graph-container > li:nth-child(4) .bar-inner { height: 75%; bottom: 0; }
-input#f-product2:checked ~ .graph-container > li:nth-child(5) .bar-inner { height: 100%; bottom: 0; }
-input#f-product2:checked ~ .graph-container > li:nth-child(6) .bar-inner { height: 100%; bottom: 0; }
-/* Product 3 */
-input#f-product3:checked ~ .graph-container > li:nth-child(1) .bar-inner { height: 25%; bottom: 0; }
-input#f-product3:checked ~ .graph-container > li:nth-child(2) .bar-inner { height: 75%; bottom: 0; }
-input#f-product3:checked ~ .graph-container > li:nth-child(3) .bar-inner { height: 100%; bottom: 0; }
-input#f-product3:checked ~ .graph-container > li:nth-child(4) .bar-inner { height: 50%; bottom: 0; }
-input#f-product3:checked ~ .graph-container > li:nth-child(5) .bar-inner { height: 25%; bottom: 0; }
-input#f-product3:checked ~ .graph-container > li:nth-child(6) .bar-inner { height: 25%; bottom: 0; }
+input#f-product1:checked ~ .graph-container > li:nth-child(4) .bar-inner { height: 50%; bottom: 0; }
+input#f-product1:checked ~ .graph-container > li:nth-child(5) .bar-inner { height: 30%; bottom: 0; }
+input#f-product1:checked ~ .graph-container > li:nth-child(6) .bar-inner { height: 70%; bottom: 0; }
+input#f-product1:checked ~ .graph-container > li:nth-child(7) .bar-inner { height: 30%; bottom: 0; }
 
 
 /****************
@@ -412,7 +400,7 @@ input[name^="paint-"] + label {
     position: relative;
     cursor: pointer;
     color: transparent;
-	
+
 	box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 1px 1px 3px rgba(0,0,0,0.3);
     text-align: center;
 }
@@ -439,7 +427,7 @@ input[name^="paint-"] + label {
     background: transparent url(../img/rainbow.gif) no-repeat;
 }
 
-#graph-green:checked + label, 
+#graph-green:checked + label,
 #graph-blue:checked + label,
 #graph-rainbow:checked + label {
 	box-shadow: 0 0 0 2px rgba(255,255,255,0.7), 1px 1px 3px rgba(0,0,0,0.3);
@@ -487,7 +475,7 @@ input[name^="resize-"] {
 input[name^="resize-"] + label {
     color: #fff;
 	display: inline-block;
-    background: rgba(183, 172, 172, .7); 
+    background: rgba(183, 172, 172, .7);
 	width: 70px;
 	line-height: 35px;
 	height: 35px;
@@ -544,7 +532,7 @@ input#graph-large:checked ~ .graph-container > li:last-child  {
 /****************
  *    Colors    *
  ****************/
- 
+
 /* Bar's Back side */
 .bar-background {
     background-color: rgba(160, 160, 160, .1);
@@ -570,9 +558,9 @@ input#graph-large:checked ~ .graph-container > li:last-child  {
 	display: inline;
 	margin: 0 10px 0 20px;
 }
-.button-label:before { 
-	content: " "; 
-	white-space: wrap; 
+.button-label:before {
+	content: " ";
+	white-space: wrap;
 }
 
 .main span:first-of-type{
@@ -582,10 +570,10 @@ input#graph-large:checked ~ .graph-container > li:last-child  {
  **                                                                          **
  ** RESPONSIVENESS                                                           **
  **                                                                          **
- ** Just as an example to show you the way how to resize the graph 			 **
+ ** Just as an example to show you the way how to resize the graph 		    	 **
  **                                                                          **
  ******************************************************************************/
- 
+
 @media screen and (max-width: 1125px) {
 	.graph-container{ font-size: 0.7em; }
 }
