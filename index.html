@@ -1,496 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Cami Williams | Computer Scientist</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Cami Williams">
+    <head>
+        <meta charset="utf-8">
+        <title>Cami Williams | Computer Scientist</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Cami Williams">
 
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/typography.css" rel="stylesheet">
-    <link href="assets/css/extension.css" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheets/prettyPhoto.css">
-    <link rel="stylesheet" href="stylesheets/isotope.css">
-    <link rel="stylesheet" href="stylesheets/graph.css">
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Montserrat|Josefin+Sans' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="stylesheets/themes/default/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="stylesheets/nivo-slider.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="stylesheet" href="stylesheets/home1.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>      
+        <script type="text/javascript" src="lights.js"></script>
 
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<link rel="stylesheet" href="stylesheets/ie8.css">
-	<![endif]-->
-
-</head>
-<body>
-	<header class="top_header">
-    	<div class="container-fluid">
-        	<div class="row-fluid">
-            	<div class="container">
-                	<div class="row">
-                    	<div class="logo_holder">
-                            <a id="logo" href="index.html"><img src="images/logo.png"/></a>
-                        </div>
-                        <nav class="links desktop-nav visible-desktop visible-tablet">
-                            <a class="def-link" title="home" href="#intro">home</a>
-                            <a title="about" href="#about">about</a>
-                            <a title="services" href="#services">press</a>
-                            <a title="features" href="#features">skills</a>
-                            <a title="contact" href="#contact">contact</a>
-                        </nav>
-
-                        <nav class="mobile-nav visible-phone">
-                        	<!-- Start Dropmenu for mobile -->
-                            <select class="dropmenu" name="dropmenu" onChange="moveTo(this.value)">
-                              <option value="" selected="selected">Menu</option>
-                              <option value="#intro">Home</option>
-                              <option value="#about">About</option>
-                              <option value="#services">Press</option>
-                              <option value="#features">Skills</option>
-                              <option value="#contact">Contact</option>
-                            </select>
-                            <!-- End Dropmenu for mobile -->
-                        </nav>
-
-                    </div>
+    </head>
+    <body onload="windowAdjust(); curvedWords();" onresize="windowAdjust()" onscroll="scroll()">
+        <!--<img src="white_brick.jpg" id="bg" alt="">
+        <div id="opacity"></div>-->
+        <div id="scrolled">
+            <div id="section1" class="section">
+                <div id="home">
+                    <div id="occupation">DEVELOPER EVANGELIST & SOFTWARE ENGINEER</div>
+                    <div id="initials">CW</div>
+                    <div id="fullname">CAMRYN WILLIAMS</div>
                 </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="clear"></div>
-
-    <section class="intro page" id="intro">
-    	<div class="container-fluid">
-        	<div class="row-fluid">
-            	<div class="container">
-                	<div class="row">
-
-                        <div class="span4 welcome_txt">
-                        	<div class="page_title">Hi, I'm Cami Williams</div>
-                            <div class="clear"></div>
-                            <p>I am a Computer Science undergrad and Spanish minor at Iowa State University.</p>
-                            <br/>
-                        </div>
-                        <div class="span8 welcome_promo">
-                        	<div class="big_circle visible-desktop visible-tablet">
-                            	 <div class="sub_heading"><br>Contact Me
-                                       <font size="2">        <br>630.202.3642 <br>lambacam@iastate.edu <br>cwillycs@gmail.com
-
-                             <br>   <a href="#contact" class="small_btn">More Contact Info</a>
-
-                            </font></div>
-                            </div>
-                        </div>
-
+                <img src="city_sky.png" id="city">
+                <span id = "first">
+                    <div id="bar1"></div>
+                    <div id="intro" class="content">
+                       <h1>MY NAME IS CAMRYN WILLIAMS</h1>
+                        I am a Developer Evangelist and Software Engineer for Clarifai in New York City.
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                </span>
 
-    <div class="clear"></div>
-
-	<section class="about page" id="about">
-    	<div class="container-fluid">
-        	<div class="row-fluid">
-            	<div class="container">
-                	<div class="row">
-                    	<div class="page_title">Allow me to introduce myself</div>
-                        <div class="promo_txt">I AM A COMPUTER SCIENCE MAJOR, SPANISH MINOR AT IOWA STATE UNIVERSITY</div>
+                <span id="second">
+                    <div id="about_me">
+                        <h1>ABOUT ME</h1>
+                        I graduated from Iowa State University in December 2015 with a B.S. in Computer Science and a minor in Spanish. I was very involved on campus: I was a teaching assistant for underclassmen CS classes, I studied abroad in Caceres, Spain, and I was the founder and president of HackISU, Iowa State's premier hackathon. I started working for Clarifai in August 2015 with my sister, Cassidy Williams (I am on the left and she is on the right, but if you get us mixed up that's totes fine). It is my goal to promote creativity, innovation, and women in technology.
                     </div>
-                    <div class="row process">
-                    	<div class="span3">
-                        	<div class="icon">
-                            	<img src="images/icons/setp-01.png"/>
-                            </div>
-                            <div class="clear"></div>
-                            <div class="sub_heading">Resume</div>
-                            <div class="clear"></div>
-                            <p><a href="Resume.pdf" target="_blank">Here is my Resume,</a> please contact me if you need any references or have any questions.</p>
-                        </div>
-                        <div class="span3">
-                        	<div class="icon">
-                            	<img src="images/icons/setp-02.png"/>
-                            </div>
-                            <div class="clear"></div>
-                            <div class="sub_heading">Experience</div>
-                            <div class="clear"></div>
-                            <p>Summer 2013: Microsoft</p>
-                            <p>Spring 2014: Adobe Student Representative</p>
-                            <p>Summer 2014: Google</p>
-                            <p>Fall 2014-Spring 2015: Google Student Ambassador</p>
-                            <p>Summer 2015: Apple</p>
-
-                        </div>
-                        <div class="span3">
-                        	<div class="icon">
-                            	<img src="images/icons/setp-03.png"/>
-                            </div>
-                            <div class="clear"></div>
-                            <div class="sub_heading">Languages</div>
-                            <div class="clear"></div>
-                            <p>Proficient in Java, C, C++, C#, HTML, CSS, Javascript, Angular JS, Jasmine, SQL, Scheme/Racket, and Android development.</div>
-                        <div class="span3">
-                        	<div class="icon">
-                            	<img src="images/icons/setp-04.png"/>
-                            </div>
-                            <div class="clear"></div>
-                            <div class="sub_heading">Hire Me!</div>
-                            <div class="clear"></div>
-                            <p>I am always looking for new job opportunities and ventures. Please contact me if you have any questions!</p>
-                        </div>
+                    <img id="me" src="me.jpg">
+                    <div id="details">
+                        <h1>DETAILS</h1>
+                        <b>Age:</b> 21<br>
+                        <b>Location:</b> New York, New York<br>
+                        <b>Hometown:</b> Chicago, Illinois<br>
+                        <b>Favorite Protein:</b> Chicken
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <div class="clients">
-        	<div class="container-fluid">
-            	<div class="row-fluid">
-                	<div class="container">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <div class="clear"></div>
-
-    <section class="services page" id="services">
-    	<div class="container-fluid">
-            <div class="row-fluid">
-                <div class="container">
-                    <div class="row">
-                        <div class="page_title">Press</div>
-                        <div class="promo_txt">I AM HONORED TO HAVE BEEN FEATURED IN A FEW PUBLICATIONS FOR MY ACCOMPLISHMENTS. PLEASE FEEL FREE TO LOOK THROUGH THEM!</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <div class="container-fluid service">
-            <div class="row-fluid">
-                <div class="container">
-                    <div class="row">
-                    	<div class="span4">
-                        	<div class="icon">
-                            	<img src="images/services/config1.png"/>
-                            </div>
-                            <div class="clear"></div>
-                            <div class="sub_heading">The Huffington Post</div>
-                            <div class="clear"></div>
-                            <p><a href = "http://www.huffingtonpost.com/2013/06/18/cisco-stem-stories-the-faces-_n_3444494.html#slide=2584823" target="_blank">STEM Stories: The Faces Of Women In Technology</a></p>
-                        </div>
-                        <div class="span4">
-                        	<div class="icon">
-                            	<img src="images/services/config2.png"/>
-                            </div>
-                            <div class="clear"></div>
-                            <div class="sub_heading">MySuburbanLife</div>
-                            <div class="clear"></div>
-                            <p><a href = "http://www.mysuburbanlife.com/2013/05/24/a-package-deal-downers-grove-sisters-fly-high-in-tech-industry/a2a4b82/" target="_blank">'A package deal': Downers Grove sisters fly high in tech industry</a></p>
-                        </div>
-                        <div class="span4">
-                        	<div class="icon">
-                            	<img src="images/services/config3.png"/>
-                            </div>
-                            <div class="clear"></div>
-                            <div class="sub_heading">The Computing Research Association</div>
-                            <div class="clear"></div>
-                            <p><a href = "http://cra.org/resources/crn-archive-view-detail/expanding_the_pipeline/?utm_source=Computing+Research+News&utm_campaign=53f53260e7-March_2013_CRN&utm_medium=email" target="_blank"> Expanding the Pipeline: Growing the Tech Talent Pool: NCWIT Aspirations in Computing Program Scales Up</a></p>
-                        </div>
-
-                    </div>
-                    <div class="row">
-                    	<div class="span4">
-                        	<div class="icon">
-                            	<img src="images/services/config4.png"/>
-                            </div>
-                            <div class="clear"></div>
-                            <div class="sub_heading">Atanasoff Today</div>
-                            <div class="clear"></div>
-                            <p><a href = "http://www.cs.iastate.edu/department/atanasofftoday/AtansoffToday_Spring2013.pdf" target="_blank">CS Williams Sisters are in the National Spotlight</a></p>
-                        </div>
-                        <div class="span4">
-                        	<div class="icon">
-                            	<img src="images/services/config5.png"/>
-                            </div>
-                            <div class="clear"></div>
-                            <div class="sub_heading">Microsoft Research</div>
-                            <div class="clear"></div>
-                            <p><a href = "http://research.microsoft.com/apps/video/default.aspx?id=179475" target="_blank">Get Inspired by Aspiration Award Winners</a></p>
-                        </div>
-                        <div class="span4">
-                        	<div class="icon">
-                            	<img src="images/services/config6.png"/>
-                            </div>
-                            <div class="clear"></div>
-                            <div class="sub_heading">Iowa State Daily</div>
-                            <div class="clear"></div>
-                            <p><a href = "http://www.iowastatedaily.com/news/article_10795dd6-6fad-11e2-aa21-001a4bcf887a.html" target="_blank">The Williams sisters head to the White House</a></p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <div class="quick_connect">
-        	<div class="container-fluid">
-            	<div class="row-fluid">
-                	<div class="container">
-                    	<div class="row">
-                        	<div class="page_title">I've got a lot <br/> to offer.</div>
-                        </div>
-                        <div class="row">
-                        	<div class="contact_button">
-                            	<a href="#contact" >Let's work together!</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="clear"></div>
-
-    <section class="page" id="features">
-    	<div class="container-fluid">
-        	<div class="row-fluid">
-            	<div class="container">
-                	<div class="row">
-                        <div class="page_title">Skills</div>
-                        <div class="promo_txt">The following are some of the programming languages that I have worked with (To see more in detail, please view my <a href="https://github.com/CamiWilliams" data-placement="bottom" data-original-title="GITHUB">GitHub</a>
-                            ):</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <div class="container-fluid">
-        	<div class="row-fluid">
-            	<div class="container">
-                	<div class="row">
-                    	<div class="span12">
-                        	<section class="main">
-
-                                <span class="button-label">Size:</span>
-                                <input type="radio" name="resize-graph" id="graph-small" /><label for="graph-small">Small</label>
-                                <input type="radio" name="resize-graph" id="graph-normal" checked="checked" /><label for="graph-normal">Normal</label>
-                                <input type="radio" name="resize-graph" id="graph-large" /><label for="graph-large">Large</label>
-
-                                <span class="button-label">Color:</span>
-                                <input type="radio" name="paint-graph" id="graph-blue" checked="checked" /><label for="graph-blue">Blue</label>
-                                <input type="radio" name="paint-graph" id="graph-green" /><label for="graph-green">Green</label>
-                                <input type="radio" name="paint-graph" id="graph-rainbow" /><label for="graph-rainbow">Rainbow</label>
-
-                                <span class="button-label">Product:</span>
-                                <input type="radio" name="fill-graph" id="f-none" /><label for="f-none">None</label>
-                                <input type="radio" name="fill-graph" id="f-product1" checked="checked" /><label for="f-product1">Product 1</label>
-                                <input type="radio" name="fill-graph" id="f-product2" /><label for="f-product2">Product 2</label>
-                                <input type="radio" name="fill-graph" id="f-product3" /><label for="f-product3">Product 3</label>
-
-                                <ul class="graph-container">
-                                    <li>
-                                        <span>Java</span>
-                                        <div class="bar-wrapper">
-                                            <div class="bar-container">
-                                                <div class="bar-background"></div>
-                                                <div class="bar-inner">90</div>
-                                                <div class="bar-foreground"></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span>Javascript</span>
-                                        <div class="bar-wrapper">
-                                            <div class="bar-container">
-                                                <div class="bar-background"></div>
-                                                <div class="bar-inner">80</div>
-                                                <div class="bar-foreground"></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span>AngularJS/Jasmine</span>
-                                        <div class="bar-wrapper">
-                                            <div class="bar-container">
-                                                <div class="bar-background"></div>
-                                                <div class="bar-inner">50</div>
-                                                <div class="bar-foreground"></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                      <span>C#</span>
-                                      <div class="bar-wrapper">
-                                          <div class="bar-container">
-                                            <div class="bar-background"></div>
-                                            <div class="bar-inner">90</div>
-                                            <div class="bar-foreground"></div>
-                                          </div>
-                                      </div>
-                                    </li>
-                                    <li>
-                                        <span>C++</span>
-                                        <div class="bar-wrapper">
-                                            <div class="bar-container">
-                                                <div class="bar-background"></div>
-                                                <div class="bar-inner">30</div>
-                                                <div class="bar-foreground"></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span>HTML/CSS</span>
-                                        <div class="bar-wrapper">
-                                            <div class="bar-container">
-                                                <div class="bar-background"></div>
-                                                <div class="bar-inner">90</div>
-                                                <div class="bar-foreground"></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span>C</span>
-                                        <div class="bar-wrapper">
-                                            <div class="bar-container">
-                                                <div class="bar-background"></div>
-                                                <div class="bar-inner">30</div>
-                                                <div class="bar-foreground"></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <ul class="graph-marker-container">
-                                            <li style="bottom:25%;"><span>25%</span></li>
-                                            <li style="bottom:50%;"><span>50%</span></li>
-                                            <li style="bottom:75%;"><span>75%</span></li>
-                                            <li style="bottom:100%;"><span>100%</span></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <div class="quick_connect">
-        	<div class="container-fluid">
-            	<div class="row-fluid">
-                	<div class="container">
-                    	<div class="row">
-                        	<div class="page_title">Impressed?</div>
-                        </div>
-                        <div class="row">
-                        	<div class="contact_button">
-                            	<a href="#contact" >I hope so!</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="clear"></div>
-
-    <section class="page" id="contact">
-    	<div class="container-fluid">
-        	<div class="row-fluid">
-            	<div class="container">
-                	<div class="row">
-                        <div class="page_title">Want to work with me?</div>
-                        <div class="promo_txt">GET IN TOUCH AND SAY HI!</div>
-                    </div>
-                    <div class="span4 contact_info">
+                </span>
+                <span id="third">
+                    <div id="experiences">
+                        <div id="work">
+                            <h1>WORK</h1>
                             <p>
-                                3624 Frederiksen Ct,<br/>
-                                Ames, IA 50010<br/>
-                                <br/>
-                                155 N Harbor Dr, Apt 3902<br/>
-                                Chicago, IL 60601<br/>
-                                <br/>
-                                Phone:  1.630.202.3642<br/>
-                                Email: lambacam@iastate.edu (School)<br/>
-                                cwillycs@gmail.com (Personal)<br/>
+                                <b>Microsoft</b> - <i>Summer 2013</i><br>Explorer Intern on the Windows Phone Store team<br><br>
+                                <b>Google</b> - <i>Summer 2014</i><br>Engineering Practicum Intern on the Corporate Engineering Legal team<br><br>
+                                <b>Apple</b> - <i>Summer 2015</i><br>Software Engineer Intern on the Mobile Apps Engineering team<br><br>
+                                <b>Clarifai</b> - <i>Present</i><br>Server-side Web Engineer and Developer Evangelist<br><br>
+                                <br>
+                                Take a look at my <a href="Resume.pdf">Resume</a> for more details!
                             </p>
-                            <div class="sub_heading">Social</div>
-                            <div class="social-icons">
-                                <a href="https://www.facebook.com/Cami.Williams" data-placement="bottom" data-original-title="FACEBOOK">f</a>
-                                <a href="http://www.linkedin.com/pub/camryn-williams/59/731/195"  data-placement="bottom" data-original-title="LINKEDIN">i</a>
-                                <a href="https://twitter.com/lambacama" data-placement="bottom" data-original-title="TWITTER">l</a>
-                                 <a href="https://github.com/CamiWilliams" data-placement="bottom" data-original-title="GITHUB">g</a>
+                        </div>
+                        <img src="oneway.jpg" id="one_way">
+                    </div>
+                </span>
+                <span id="forth">
+                    <div id="skills">
+                        <h1>SKILLS</h1>
+                        <div style="display: -webkit-inline-box;">
+                            <p class="content">When I program, I mainly use Eclipse or Sublime, however I am comfortable with most IDEs. I have experience using Photoshop and Illustrator as well. Most of my work experience has been both server and client side projects. At hackathons and in group projects, I mainly focus on server side web and mobile development.<br> To see some of my projects, check out my <a href="http://github.com/CamiWilliams">GitHub</a>!</p>
+                            <div>
+                                <div id="java" class="skill_bar">Java</div>
+                                <div id="javascript" class="skill_bar">Javascript</div>
+                                <div id="html_css" class="skill_bar">HTML/CSS</div>
+                                <div id="objective_c" class="skill_bar">Objective-C</div>
+                                <div id="angular" class="skill_bar">Angular JS</div>
+                                <div id="jasmine" class="skill_bar">Jasmine</div>
+                                <div id="sql" class="skill_bar">SQL</div>
+                                <div id="scheme" class="skill_bar">Scheme</div>
+                                <div id="c" class="skill_bar">C++</div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <div class="quick_connect">
-        	<div class="container-fluid">
-            	<div class="row-fluid">
-                	<div class="container">
-                    	<div class="row">
-                        	<div class="page_title">You won't <br/>be disappointed <br/>I promise.</div>
+                </span>
+                <span id="fifth">
+                    <div id="contact">
+                        <h1>CONTACT</h1>
+                        <div style="display: -webkit-inline-box;">
+                            <img src="empire.png" id="empire" />
+                            <p class="content">
+                                <b>Email:</b> <br>cwillycs@gmail.com<br>cami.williams@clarifai.com
+                                <br><br>
+                                <b>LinkedIn:</b><br>http://www.linkedin.com/in/camrynwilliams
+                                <br><br>
+                                <b>GitHub:</b><br>http://github.com/CamiWilliams
+                                <br><br>
+                                <b>Twitter:</b><br>@cwillycs
+                                <br><br>
+                                And here is my <a href="Resume.pdf">Resume</a> one more time!
+                            </p>
                         </div>
                     </div>
-                </div>
+                </span>
             </div>
         </div>
-    </section>
+    </div>
+    </body>
 
-    <div class="clear"></div>
-
-    <footer>
-    	<div class="container-fluid">
-        	<div class="row-fluid">
-            	<div class="container">
-                	<div class="row">
-                    	<div class="span8 offset2">
-                            <div class="connect">
-                            	<a href="mailto:lambacam@iastate.edu">lambacam@iastate.edu</a>
-                                <span>.</span>
-                                <a href="mailto:lambacama@gmail.com">cwillycs@gmail.com</a>
-                                <span>.</span>
-                                <a href="https://www.facebook.com/Cami.Williams">Facebook</a>
-                                <span>.</span>
-                                <a href="http://www.linkedin.com/pub/camryn-williams/59/731/195">LinkedIn</a>
-                            </div>
-                            <div class="clear"></div>
-                            <p>Cami Williams, Computer Science Major and Spanish Minor.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+</html>
